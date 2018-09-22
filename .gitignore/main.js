@@ -12,7 +12,7 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.login('NDQ3NDc1MzY5MDMzOTkwMTQ1.DmS8qQ.sHtwIYx8t65W3yjKwZ2SRDkeAZ8');
+bot.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd", member =>{
     member.guild.channels.find("name", "général").send(` ${member.user} Bienvenue sur le serveur `)
